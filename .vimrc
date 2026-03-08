@@ -10,3 +10,11 @@ set smartindent
 
 set number
 set relativenumber
+
+set termguicolors
+
+call plug#begin('~/.vim/plugged')
+Plug 'ghifarit53/tokyonight-vim'
+call plug#end()
+
+colorscheme tokyonight
