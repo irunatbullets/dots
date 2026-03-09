@@ -1,0 +1,71 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+# ===== Prompt layout =====
+format = """
+$env_var\
+$username\
+$hostname\
+:\
+$directory\
+$git_branch\
+$git_status\
+$character
+"""
+
+#[env_var.CONTAINER_ID]
+#symbol = "📦"
+#format = "[\\[$symbol$env_value\\] ]($style)"
+#style = "bold white"
+
+[env_var.CONTAINER_PROMPT]
+format = "$env_value"
+
+
+# ===== User / host =====
+[username]
+show_always = true
+style_user = "bold green"
+style_root = "bold green"
+format = "[$user]($style)"
+
+[hostname]
+ssh_only = false
+style = "bold green"
+format = "[@$hostname]($style)"
+
+# ===== Directory =====
+[directory]
+style = "bold blue"
+truncate_to_repo = false
+format = "[$path]($style)"
+
+# ===== Git branch =====
+[git_branch]
+style = "bright-black"
+symbol = ""
+format = " [$branch]($style)"
+
+# ===== Git status =====
+[git_status]
+style = "bright-black"
+format = "[$all_status]($style) "
+
+# Symbols (very bash-like)
+conflicted = "!"
+modified   = "*"
+staged     = "+"
+untracked  = "?"
+renamed    = "»"
+deleted    = "✘"
+ahead      = "⇡"
+behind     = "⇣"
+diverged   = "⇕"
+
+# ===== Prompt character =====
+[character]
+success_symbol = "[\\$](bold blue)"
+error_symbol   = "[\\$](bold blue)"
+
+
