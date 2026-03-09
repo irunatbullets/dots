@@ -18,3 +18,7 @@ Plug 'ghifarit53/tokyonight-vim'
 call plug#end()
 
 colorscheme tokyonight
+
+" Tokyo Night tweaks for comments and line numbers
+highlight Comment ctermfg=DarkGrey guifg=#565f89
+highlight LineNr guifg=#565f89
