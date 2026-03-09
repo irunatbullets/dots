@@ -232,6 +232,8 @@ bar {
     # The default just shows the current date and time.
     status_command while date +"%a %d %b %I:%M %p"; do sleep 60; done
 
+    font pango: DejaVuSansM Nerd Font Mono 10
+
     colors {
         statusline #c0caf5
         background #1a1b26
