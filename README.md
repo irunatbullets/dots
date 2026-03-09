@@ -1,33 +1,4 @@
 ## Prerequisites
 
-Install dependencies
-
-```
-sudo apt install curl
-
-```
-
-Install the nwg-autotiling script. For example, on debian
-
-```
-sudo apt install autotiling
-
-```
-
-Vim
-
-```
-sudo apt install vim
-
-```
-
-and then:
-
-```
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-```
-
-Then open vim and type `:PlugInstall`
+Before running the install script, you need to install `brew` from https://brew.sh/ making sure to follow the post install instructions.
 

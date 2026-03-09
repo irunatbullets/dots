@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Check brew
 if ! command -v brew >/dev/null 2>&1; then
   echo "❌ Homebrew is not installed."
   echo "👉 Install it first: https://brew.sh"
@@ -16,7 +15,7 @@ else
     echo "✅ Starship already installed"
 fi
 
-DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 
 # Ensure ~/.config exists
 mkdir -p "$HOME/.config"

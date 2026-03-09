@@ -1,0 +1,9 @@
+git
+vim
+curl
+unzip
+tree
+sway
+autotiling
+fuzzel
+firefox-esr
